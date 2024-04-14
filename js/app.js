@@ -16,3 +16,17 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlide(currentSlide + 1);
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const openBtn = document.getElementById('contactBtn');
+  const closeBtn = document.getElementById('closeBtn');
+  const popup = document.getElementById('popupForm');
+
+  openBtn.addEventListener('click', function() {
+    popup.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+});

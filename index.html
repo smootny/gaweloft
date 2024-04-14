@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+  <script src="https://kit.fontawesome.com/4f0be65f1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
         <a href="#work">WORK</a>
         <a href="#studio">STUDIO</a>
         <a href="#news">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
+        <a id="contactBtn" href="#contact">CONTACT</a>
       </nav>
     </header>
     <div class="carousel" data-carousel>
@@ -40,6 +40,29 @@
       </ul>
     </div>
   </section>
+  <div id="popupForm" class="pop-up" style="display: none;">
+    <form>
+      <label></label>
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="number" required>
+        <label for="number"><i class="fas fa-phone"></i> Phone No.</label>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="email"><i class="fas fa-envelope"></i> Email id</label>
+      </div>
+      <div class="input-group">
+        <textarea id="message" rows="8" required></textarea>
+        <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+      </div>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+      <button type="button" id="closeBtn">Close</button>
+    </form>
+  </div>
 </main>
 <footer>
   <div class="footer-col">

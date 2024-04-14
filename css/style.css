@@ -5,6 +5,7 @@
 /*}*/
 
 body {
+  background-color: #2d2e33;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -172,6 +173,43 @@ footer{
   color: #4d4f55;
   background-color: white;
 }
+
+form {
+  width:90%;
+  max-width: 600px;
+}
+.input-group{
+  margin-bottom: 30px;
+  position: relative;
+}
+input, textarea {
+  width: 100%;
+ padding: 10px;
+  outline: 0;
+  border: 1px solid #ffffff;
+  color: #fff;
+  background: transparent;
+  font-size: 15px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+}
+
+.sumbit {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+}
 @media(max-width: 740px) {
   .footer-col {
     width: 50%;
@@ -188,13 +226,20 @@ footer{
     width: 100%;
   }
 }
-
 .pop-up {
+  height: 400px;
+  width: 500px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.42);
+  position: fixed; /* Center the popup */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the div exactly */
+  display: none; /* Hide by default */
+  z-index: 1000; /* Make sure it's on top */
 }
 

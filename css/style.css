@@ -254,7 +254,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;  /* Border bottom for separation */
+  border-bottom: 1px solid black;
   margin-bottom: 36px;
   height: 60px;
 }
@@ -274,11 +274,11 @@ label {
 .input-container {
   display: flex;
   justify-content: space-between;
-  gap: 30px;  /* Add gap between the inputs */
+  gap: 30px;
 }
 
 .input-group {
-  flex-grow: 1;  /* Inputs take available space */
+  flex-grow: 1;
 }
 
 .input-group input, .input-group textarea {

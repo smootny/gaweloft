@@ -5,9 +5,15 @@
 /*}*/
 
 body {
+  background-color: #2d2e33;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+main {
+  width: 100%;
+  overflow: hidden; /* This will ensure no overflow from children */
 }
 
 
@@ -25,27 +31,35 @@ body {
   list-style: none;
 }
 
+.carousel > ul > li {
+  width: 100%; /* Ensure the list item matches the width of the carousel */
+  position: absolute; /* Aligns all slides on top of each other */
+  left: 0;
+  top: 0;
+}
+
 .slide {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: 200ms opacity ease-in-out;
+  transition: opacity 200ms ease-in-out;
   transition-delay: 200ms;
 }
 
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.slide[data-active] {
+.slide[data-active="true"] {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
+
+
+
+.slide > img {
+  width: 100%;
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  object-fit: cover; /* Covers the slide area, might crop the image */
+}
+
 
 .carousel-button {
   position: absolute;
@@ -92,6 +106,8 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: space-evenly;
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -103,6 +119,10 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+}
+
+a:hover {
+  color: white;
 }
 
 footer{
@@ -153,22 +173,138 @@ footer{
   color: #4d4f55;
   background-color: white;
 }
-/*
-@media(max-width: 740px){
-    .footer-col{
-        width: 50%;
-        margin-bottom: 20px;
-        text-align: center;
-    }
 
-    .footer-col h4::before{
-        all: unset;
-    }
+form {
+  width:480px;
+}
+.input-group{
+  margin-bottom: 34px;
+  position: relative;
 }
 
-@media(max-width: 555px){
-    .footer-col{
-        width: 100%;
-    }
-} */
+label {
+  font-family: 'Orbitron', sans-serif;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: black;
+  cursor: text;
+  transition: 0.2s;
+}
 
+.title {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.submit {
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px 0;
+  color: black;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  width: 500px;
+  cursor: pointer;
+}
+@media(max-width: 740px) {
+  .footer-col {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-col h4::before {
+    display: none; /* Instead of 'all: unset', directly hide or remove the element */
+  }
+}
+
+@media(max-width: 555px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.pop-up {
+  height: 450px;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+  border: 1px solid rgba(255, 255, 255, 0.61);
+  position: fixed; /* Center the popup */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the div exactly */
+  display: none; /* Hide by default */
+  z-index: 1000; /* Make sure it's on top */
+  padding: 10px 20px 10px 20px;
+}
+
+
+.input-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;  /* Border bottom for separation */
+  margin-bottom: 36px;
+  height: 60px;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;  /* Add gap between the inputs */
+}
+
+.input-group {
+  flex-grow: 1;  /* Inputs take available space */
+}
+
+.input-group input, .input-group textarea {
+  font-family: 'Orbitron', sans-serif;
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  background: transparent;
+  color: black;
+  font-size: 15px;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -30px;
+  font-size:12px;
+}
+
+.submit:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+textarea {
+  height: 90px;
+}

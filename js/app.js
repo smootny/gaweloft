@@ -30,3 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     popup.style.display = 'none';
   });
 });
+
+$(document).ready(function() {
+  $('#os-phrases > h2 > span, #os-phrases > h3 > span').lettering(); // Apply lettering to each letter in spans of h2 and h3
+});

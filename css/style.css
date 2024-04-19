@@ -5,12 +5,19 @@
 /*}*/
 
 body {
-  background-color: #2d2e33;
+  background-color: black;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
+/*body, html {*/
+/*  font-size: 100%;*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  height: 100%;*/
+/*  background: #000;*/
+/*  color: #fff;*/
+/*}*/
 main {
   width: 100%;
   overflow: hidden; /* This will ensure no overflow from children */
@@ -310,16 +317,8 @@ textarea {
   height: 90px;
 }
 
-*, *:after, *:before { box-sizing: border-box; }
-body, html {
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  background: #000;
-  color: #fff;
-}
-.container {
+
+.caption-container {
   position: relative;
   height: 100vh;
   display: flex;
@@ -330,7 +329,7 @@ body, html {
 .os-phrases h2 {
   z-index: 100;
   /*color: #323131;*/
-  color: white;
+  color: #ededed;
   font-family: 'Orbitron', sans-serif;
   /*font-weight: bold;*/
   position: relative;
@@ -356,7 +355,7 @@ body, html {
   left: 200px;
   bottom: 200px;
   /*color: #323131; !* Lighter grey to differentiate from the main title *!*/
-  color: white;
+  color: #ededed;
   font-family: 'Orbitron', sans-serif;
   font-size: 30px; /* Smaller than the main title */
   font-weight: 100; /* Bolder than the main title for contrast */
@@ -371,3 +370,138 @@ body, html {
 
 }
 
+.kontenerek {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.two {
+  background-color: #FBF9EE;
+}
+
+.my-work {
+  font-size: 120px;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 50px;
+}
+.picture-container {
+    display: flex;
+  justify-content: flex-end;
+  }
+
+
+.three {
+  background-color: #FBF9EE;
+}
+.four {
+  background-color: #FBF9EE;
+  align-content: end;
+}
+
+@keyframes fadeOutToLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-100px); }
+}
+
+@keyframes fadeOutToRight {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(100px); }
+}
+
+.os-phrases h2.fade-out-left {
+  animation: fadeOutToLeft 1s forwards;
+}
+
+.os-phrases h2.fade-out-right {
+  animation: fadeOutToRight 1s forwards;
+}
+---
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.blog-card{
+  width: 350px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -175px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+  text-align: center;
+
+  &.spring-fever{
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/bg-blog-card.jpg) no-repeat;
+  }
+
+
+
+  &:hover{
+
+    .card-info{
+      opacity: 1;
+      bottom: 120px;
+    }
+    .color-overlay{
+      background: rgba(84,104,110,0.8);
+    }
+  }
+}
+
+.title-content{
+  text-align: center;
+  margin: 70px 0 0 0;
+  z-index: 20;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+h3{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #9CC9E3;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+hr{
+  width: 50px;
+  height: 3px;
+  margin: 20px auto;
+  border: 0;
+  background: #D0BB57;
+}
+.intro{
+  width: 170px;
+  margin: 0 auto;
+  color: #DCE3E7;
+  font-family: 'Droid Serif', serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+}
+.card-info{
+  width: 100%;
+  bottom: 100px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 50px;
+  color: #DCE3E7;
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 20;
+  opacity: 0;
+  transition: bottom .3s, opacity .3s cubic-bezier(.33,.66,.66,1);
+}

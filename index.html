@@ -12,7 +12,8 @@
 <body>
 
 <main class="main">
-  <section aria-label="Newest Photos">
+  <div class="kontenerek">
+  <section class='one' aria-label="Newest Photos">
     <header>
       <nav>
         <a href="#work">WORK</a>
@@ -25,7 +26,7 @@
       <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
       <button class="carousel-button next" data-carousel-button="next">&#62;</button>
       <ul data-slides>
-        <div class="container">
+        <div class="caption-container">
           <div class="os-phrases" id="os-phrases">
             <h2><span>Gaweloft</span></h2>
             <h2 class="designs"><span>Interior designs</span></h2>
@@ -46,53 +47,78 @@
       </ul>
     </div>
   </section>
-  <div id="popupForm" class="pop-up" style="display: none;">
-    <div class="popup-header">
-      <h1 class="title">CONTACT</h1>
-      <button type="button" id="closeBtn" class="close-btn">&#x2715;</button>
+  <section id="work" class="two">
+    <h1 class="my-work">MY WORK</h1>
+    <div class="picture-container">
+      <div class="blog-card spring-fever">
+        <div class="title-content">
+          <h3>SPRING FEVER</h3>
+          <hr />
+          <div class="intro">Yllamco laboris nisi ut aliquip ex ea commodo.</div>
+        </div><!-- /.title-content -->
+        <div class="card-info">
+          Lorem ipsum dolor sit amet,
+        </div><!-- /.card-info -->
+
+      </div><!-- /.blog-card -->
     </div>
-    <form>
-      <div class="input-container">
-        <div class="input-group">
-          <input type="text" id="name" required>
-          <label for="name"><i class="fas fa-user"></i> Your Name</label>
+  </section>
+  <section id="studio"  class="three">
+    <h1 class="three">STUDIO</h1>
+  </section>
+  <section id="news" class="four">
+    <h1 class="four"> PROJECTS
+    </h1>
+    <footer>
+      <div class="footer-col">
+        <h4>GAWELOFT</h4>
+      </div>
+      <div class="footer-col">
+        <h4>INFO@GAWELOFT.PL</h4>
+      </div>
+      <div class="footer-col">
+        <h4>KASPROWICZA 6</h4>
+        <h4>WROCLAW</h4>
+      </div>
+      <div class="footer-col">
+        <div class="social-media">
+          <a href="#">INSTAGRAM</a>
+          <a href="#">FACEBOOK</a>
+          <a href="#">LINKEDIN</a>
+          <a href="#">PINTEREST</a>
         </div>
-        <div class="input-group">
-          <input type="text" id="number" required>
-          <label for="number"><i class="fas fa-phone"></i> Phone Number</label>
-        </div>
       </div>
-      <div class="input-group">
-        <input type="email" id="email" required>
-        <label for="email"><i class="fas fa-envelope"></i> @email.com</label>
-      </div>
-      <div class="input-group">
-        <textarea id="message" rows="4" required></textarea> <!-- Reduced rows to make it visually compact -->
-        <label for="message"><i class="fas fa-comment"></i> Your Message</label>
-      </div>
-      <button type="submit" class="submit"><i class="fas fa-paper-plane"></i> SEND</button>
-    </form>
+    </footer>
+  </section>
   </div>
 </main>
-<footer>
-  <div class="footer-col">
-    <h4>GAWELOFT</h4>
+
+<div id="popupForm" class="pop-up" style="display: none;">
+  <div class="popup-header">
+    <h1 class="title">CONTACT</h1>
+    <button type="button" id="closeBtn" class="close-btn">&#x2715;</button>
   </div>
-  <div class="footer-col">
-    <h4>INFO@GAWELOFT.PL</h4>
-  </div>
-  <div class="footer-col">
-    <h4>KASPROWICZA 6</h4>
-    <h4>WROCLAW</h4>
-  </div>
-  <div class="footer-col">
-    <div class="social-media">
-      <a href="#">INSTAGRAM</a>
-      <a href="#">FACEBOOK</a>
-      <a href="#">LINKEDIN</a>
-      <a href="#">PINTEREST</a>
+  <form>
+    <div class="input-container">
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+      </div>
+      <div class="input-group">
+        <input type="text" id="number" required>
+        <label for="number"><i class="fas fa-phone"></i> Phone Number</label>
+      </div>
     </div>
-  </div>
-</footer>
+    <div class="input-group">
+      <input type="email" id="email" required>
+      <label for="email"><i class="fas fa-envelope"></i> @email.com</label>
+    </div>
+    <div class="input-group">
+      <textarea id="message" rows="4" required></textarea> <!-- Reduced rows to make it visually compact -->
+      <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+    </div>
+    <button type="submit" class="submit"><i class="fas fa-paper-plane"></i> SEND</button>
+  </form>
+</div>
 </body>
 </html>

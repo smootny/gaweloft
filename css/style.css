@@ -1,28 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Playfair+Display&display=swap');
 
-/**, *::before, *::after {*/
-/*  box-sizing: border-box;*/
-/*}*/
-
 body {
-  background-color: black;
+  background-color: #FBF9EE;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
-/*body, html {*/
-/*  font-size: 100%;*/
-/*  padding: 0;*/
-/*  margin: 0;*/
-/*  height: 100%;*/
-/*  background: #000;*/
-/*  color: #fff;*/
-/*}*/
+
 main {
   width: 100%;
   overflow: hidden; /* This will ensure no overflow from children */
 }
-
 
 .carousel {
   width: 100%; /* Updated from 100vw to 100% */
@@ -30,7 +18,6 @@ main {
   position: relative;
   overflow: hidden; /* Added to ensure no horizontal scrolling occurs */
 }
-
 
 .carousel > ul {
   margin: 0;
@@ -59,15 +46,12 @@ main {
   transition-delay: 0ms;
 }
 
-
-
 .slide > img {
-  opacity: 0.7;
+  opacity: 1;
   width: 100%;
   height: auto; /* Adjust height automatically to maintain aspect ratio */
   object-fit: cover; /* Covers the slide area, might crop the image */
 }
-
 
 .carousel-button {
   position: absolute;
@@ -86,7 +70,7 @@ main {
 
 .carousel-button:hover,
 .carousel-button:focus {
-  color: white;
+  color: #FBF9EE;
   background-color: rgba(0, 0, 0, .2);
 }
 
@@ -101,8 +85,6 @@ main {
 .carousel-button.next {
   right: 1rem;
 }
-
-
 
 header {
   position: absolute;
@@ -130,29 +112,31 @@ nav a {
 }
 
 a:hover {
-  color: white;
+  color: #FBF9EE;
 }
 
 footer{
   display: flex;
+  height: 320px;
   flex-wrap: wrap;
   margin-top: auto;
   background-color: #2d2e33;
   padding: 60px 10%;
 }
 
-
 .footer-col{
   width: 25%;
+  align-content: flex-end;
 }
 
 .footer-col h4{
   position: relative;
   font-family: 'Orbitron', sans-serif;
-  margin-bottom: 30px;
+  margin: 0;
   font-weight: 400;
-  font-size: 12px;
-  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FBF9EE;
   text-transform: capitalize;
 }
 
@@ -165,26 +149,59 @@ footer{
   width: 40px;
 }
 
+.logo {
+  display: grid;
+  justify-content: start;
+  justify-items: start;
+}
 
-
-.social-media a{
-  display: inline-block;
+.logo a {
   font-family: 'Orbitron', sans-serif;
   text-decoration: none;
-  color: white;
+  color: #FBF9EE;
   text-align: center;
   line-height: 24px;
   transition: 0.4s;
+  font-size: 18px;
+}
+
+.info {
+  display: grid;
+  justify-content: center;
+  justify-items: end;
+}
+
+.address {
+  display: grid;
+  justify-content: center;
+  justify-items: start;
+}
+
+.social-media {
+  display: grid;
+  justify-content: end;
+  justify-items: end;
+}
+
+.social-media a{
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  color: #FBF9EE;
+  text-align: center;
+  line-height: 24px;
+  transition: 0.4s;
+  font-size: 18px;
 }
 
 .social-media a:hover{
   color: #4d4f55;
-  background-color: white;
+  background-color: #FBF9EE;
 }
 
 form {
   width:480px;
 }
+
 .input-group{
   margin-bottom: 34px;
   position: relative;
@@ -216,29 +233,14 @@ label {
   width: 500px;
   cursor: pointer;
 }
-@media(max-width: 740px) {
-  .footer-col {
-    width: 50%;
-    text-align: center;
-  }
 
-  .footer-col h4::before {
-    display: none; /* Instead of 'all: unset', directly hide or remove the element */
-  }
-}
-
-@media(max-width: 555px) {
-  .footer-col {
-    width: 100%;
-  }
-}
 .pop-up {
   height: 450px;
   width: 500px;
   background: rgba(255, 255, 255, 0.14);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.8px);
+  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(255, 255, 255, 0.61);
   position: fixed; /* Center the popup */
@@ -250,13 +252,10 @@ label {
   padding: 10px 20px 10px 20px;
 }
 
-
 .input-container {
   display: flex;
   justify-content: space-around;
 }
-
-
 
 .popup-header {
   display: flex;
@@ -276,7 +275,7 @@ label {
 }
 
 .close-btn:hover {
-  color: white;
+  color: #FBF9EE;
 }
 
 .input-container {
@@ -309,14 +308,13 @@ textarea:valid~label{
 }
 
 .submit:hover {
-  color: white;
-  border: 1px solid white;
+  color: #FBF9EE;
+  border: 1px solid #FBF9EE;
 }
 
 textarea {
   height: 90px;
 }
-
 
 .caption-container {
   position: relative;
@@ -328,8 +326,9 @@ textarea {
 
 .os-phrases h2 {
   z-index: 100;
-  /*color: #323131;*/
-  color: #ededed;
+  /*color: black;*/
+  color: #FBF9EE;
+/*color: red;*/
   font-family: 'Orbitron', sans-serif;
   /*font-weight: bold;*/
   position: relative;
@@ -346,16 +345,18 @@ textarea {
     transform: translateY(-50px);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: translateY(0);
   }
 }
+
 .os-phrases .designs {
   z-index: 101;
   left: 200px;
   bottom: 200px;
   /*color: #323131; !* Lighter grey to differentiate from the main title *!*/
-  color: #ededed;
+  color: #FBF9EE;
+  /*color: red;*/
   font-family: 'Orbitron', sans-serif;
   font-size: 30px; /* Smaller than the main title */
   font-weight: 100; /* Bolder than the main title for contrast */
@@ -366,11 +367,11 @@ textarea {
 
 @keyframes fadeInSlow {
   0% { opacity: 0; transform: translateX(300px); }
-  100% { opacity: 1; transform: translateX(550px)}
+  100% { opacity: 0.85; transform: translateX(550px)}
 
 }
 
-.kontenerek {
+.container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
@@ -381,26 +382,60 @@ section {
 }
 
 .two {
+  display: grid; //
   background-color: #FBF9EE;
 }
 
 .my-work {
+  height: 150px;
   font-size: 120px;
   font-family: 'Orbitron', sans-serif;
   padding-top: 50px;
+  border-bottom: 1px solid black;
+  margin: 10px 10px 10px 10px;
 }
+
+.studio {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 120px;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 50px;
+  border-bottom: 1px solid black;
+  margin: 10px 10px 10px 10px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 120px;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding-top: 50px;
+  border-bottom: 1px solid black;
+  margin: 10px 10px 10px 10px;
+}
+
 .picture-container {
     display: flex;
-  justify-content: flex-end;
   }
 
+.picture-container-two {
+  display: flex;
+
+}
+.picture-container-three {
+  display: flex;
+}
 
 .three {
   background-color: #FBF9EE;
 }
+
 .four {
   background-color: #FBF9EE;
-  align-content: end;
+  display: grid;
+  align-items: start;
 }
 
 @keyframes fadeOutToLeft {
@@ -420,88 +455,135 @@ section {
 .os-phrases h2.fade-out-right {
   animation: fadeOutToRight 1s forwards;
 }
----
 
-* {
-  box-sizing: border-box;
+.card {
+  display: flex;
+  flex: 350px;
+  width: 350px;
+  height: 200px;
+    /*border: 1px solid rgba(255, 255, 255, 0.61);*/
+    padding: 10px;
+  justify-content: space-evenly;
+}
+
+.images {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.card .images:hover {
+  transition: transform 1s ease;
+}
+
+.card .images:hover {
+  transform: scale(1.2);
+}
+
+.studio-card {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+height: 380px;
+  border-bottom: 1px solid black;
+}
+
+.first-text-studio {
+  padding-left: 30px;
+  text-align: justify;
+  font-family: 'Orbitron';
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+
+.second-text-studio {
+  padding-right: 30px;
+  text-align: justify;
+  font-family: 'Orbitron';
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+
+.studio-images {
+border-radius: 10px;
+  width: 380px;
+}
+
+.text-images {
+  width: 350px;
+  font-size: 80px;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  font-weight: 100;
+  line-height: 70px;
+  border-bottom: 1px solid black;
+}
+
+.text-images-two {
+  width: 350px;
+  font-size: 80px;
+  font-weight: 100;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  line-height: 70px;
+  border-bottom: 1px solid black;
+}
+
+.text-about-me {
+  padding-left: 30px;
+  text-align: justify;
+  font-family: 'Orbitron';
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-size: 24px;
+  margin: 10px 10px 10px 10px;
+}
+
+.gradient {
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, black, transparent);
+  opacity: 1;
+ }
+
+.fade-out {
+  opacity: 0 !important; /* Override any other opacity settings */
+  animation: fadeOutGradient 1s forwards;
+}
+
+@keyframes fadeOutGradient {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.gray {
+  color: gray;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+
+span {
   margin: 0;
   padding: 0;
 }
 
-
-
-.blog-card{
-  width: 350px;
-  height: 500px;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0 0 -175px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
-  text-align: center;
-
-  &.spring-fever{
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/bg-blog-card.jpg) no-repeat;
-  }
-
-
-
-  &:hover{
-
-    .card-info{
-      opacity: 1;
-      bottom: 120px;
-    }
-    .color-overlay{
-      background: rgba(84,104,110,0.8);
-    }
-  }
-}
-
-.title-content{
-  text-align: center;
-  margin: 70px 0 0 0;
-  z-index: 20;
+.year {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #FBF9EE;
+  height: 50px;
   width: 100%;
-  top: 0;
-  left: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  color: #FBF9EE;
+  margin-top: 18px;
 }
-h3{
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #9CC9E3;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 0;
-}
-hr{
-  width: 50px;
-  height: 3px;
-  margin: 20px auto;
-  border: 0;
-  background: #D0BB57;
-}
-.intro{
-  width: 170px;
-  margin: 0 auto;
-  color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 18px;
-}
-.card-info{
-  width: 100%;
-  bottom: 100px;
-  left: 0;
-  margin: 0 auto;
-  padding: 0 50px;
-  color: #DCE3E7;
-  font-family: 'Droid Serif', serif;
-  font-size: 16px;
-  line-height: 24px;
-  z-index: 20;
-  opacity: 0;
-  transition: bottom .3s, opacity .3s cubic-bezier(.33,.66,.66,1);
-}
+

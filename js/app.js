@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let animationTriggered = false; // Flag to check if animation has been triggered
   const firstSlideGradient = document.querySelector('.gradient');
 let gradientHidden = false;
+
   function showSlide(index) {
     slides[currentSlide].removeAttribute('data-active');
     currentSlide = (index + slides.length) % slides.length;

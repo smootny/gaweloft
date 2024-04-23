@@ -243,6 +243,44 @@ label {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(255, 255, 255, 0.61);
+  color: #fff;
+  cursor: text;
+}
+
+.sumbit {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+}
+@media(max-width: 740px) {
+  .footer-col {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer-col h4::before {
+    display: none; /* Instead of 'all: unset', directly hide or remove the element */
+  }
+}
+
+@media(max-width: 555px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.pop-up {
+  height: 400px;
+  width: 500px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
   position: fixed; /* Center the popup */
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */

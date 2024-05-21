@@ -1028,6 +1028,7 @@ span {
     &::before {
       content: none;
     }
+
     &:nth-child(odd)::after {
       top: 60%;
       translate: -50% calc(-50% - var(--m) / 2 - var(--w) / 2);
@@ -1043,6 +1044,7 @@ span {
       opacity: 50%;
     }
   }
+}
   .info-timeline {
     display: unset;
     text-align: center;

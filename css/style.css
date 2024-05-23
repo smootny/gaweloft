@@ -5,19 +5,19 @@ body {
   background-color: #FBF9EE;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 main {
   width: 100%;
-  overflow: hidden; /* This will ensure no overflow from children */
+  overflow: hidden;
 }
 
 .carousel {
-  width: 100%; /* Updated from 100vw to 100% */
+  width: 100%;
   height: 100vh;
   position: relative;
-  overflow: hidden; /* Added to ensure no horizontal scrolling occurs */
+  overflow: hidden;
 }
 
 .carousel > ul {
@@ -27,8 +27,8 @@ main {
 }
 
 .carousel > ul > li {
-  width: 100%; /* Ensure the list item matches the width of the carousel */
-  position: absolute; /* Aligns all slides on top of each other */
+  width: 100%;
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -50,14 +50,13 @@ main {
 .slide > img {
   opacity: 1;
   width: 100%;
-  height: auto; /* Adjust height automatically to maintain aspect ratio */
-  object-fit: cover; /* Covers the slide area, might crop the image */
+  height: auto;
+  object-fit: cover;
 }
 
 .carousel-button {
   position: absolute;
   z-index: 2;
-  background: none;
   border: none;
   font-size: 4rem;
   top: 50%;
@@ -116,7 +115,6 @@ nav a {
 }
 
 a:hover {
-  /*color: #FBF9EE;*/
   color: orange;
 }
 
@@ -232,7 +230,7 @@ label {
 }
 
 .title-contact {
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
 }
 
 .submit {
@@ -256,12 +254,12 @@ label {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.42);
-  position: fixed; /* Center the popup */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to center the div exactly */
-  display: none; /* Hide by default */
-  z-index: 1000; /* Make sure it's on top */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000;
   padding: 10px 20px 10px 20px;
 }
 
@@ -274,12 +272,12 @@ label {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.42);
-  position: fixed; /* Center the popup */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust to center the div exactly */
-  display: none; /* Hide by default */
-  z-index: 1000; /* Make sure it's on top */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000;
   padding: 10px 20px 10px 20px;
 }
 
@@ -364,11 +362,8 @@ textarea {
 
 .os-phrases h2 {
   z-index: 100;
-  /*color: black;*/
   color: #FBF9EE;
-  /*color: red;*/
   font-family: 'Orbitron', sans-serif;
-  /*font-weight: bold;*/
   position: relative;
   font-size: 200px;
   font-weight: 200;
@@ -392,15 +387,13 @@ textarea {
   z-index: 101;
   left: 200px;
   bottom: 200px;
-  /*color: #323131; !* Lighter grey to differentiate from the main title *!*/
   color: #FBF9EE;
-  /*color: red;*/
   font-family: 'Orbitron', sans-serif;
-  font-size: 30px; /* Smaller than the main title */
-  font-weight: 100; /* Bolder than the main title for contrast */
-  letter-spacing: 7px; /* Less spacing than the main title */
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 7px;
   opacity: 0;
-  animation: fadeInSlow 5s forwards; /* Slower fade in for effect */
+  animation: fadeInSlow 5s forwards;
 }
 
 @keyframes fadeInSlow {
@@ -447,7 +440,6 @@ section {
   justify-content: flex-start;
   font-size: 120px;
   font-family: 'Orbitron', sans-serif;
-  margin: 0;
   padding-top: 50px;
   border-bottom: 1px solid black;
   margin: 10px 10px 10px 10px;
@@ -498,7 +490,6 @@ section {
   flex: 350px;
   width: 350px;
   height: 200px;
-  /*border: 1px solid rgba(255, 255, 255, 0.61);*/
   padding: 10px;
   justify-content: space-evenly;
 }
@@ -533,7 +524,7 @@ section {
 
 .first-text-studio {
   padding-left: 30px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 20px;
@@ -542,7 +533,7 @@ section {
 
 .second-text-studio {
   padding-right: 30px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 20px;
@@ -577,7 +568,7 @@ section {
 .text-about-me {
   padding-left: 30px;
   text-align: justify;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
   letter-spacing: 2px;
   font-size: 20px;
@@ -601,7 +592,7 @@ section {
 }
 
 .fade-out {
-  opacity: 0 !important; /* Override any other opacity settings */
+  opacity: 0 !important;
   animation: fadeOutGradient 1s forwards;
 }
 
@@ -632,7 +623,6 @@ span {
   display: flex;
   justify-content: flex-end;
   border-top: 1px solid #FBF9EE;
-  /*height: 50px;*/
   width: 100%;
   font-family: 'Orbitron', sans-serif;
   font-size: 150px;
@@ -647,16 +637,10 @@ span {
   position: absolute;
 }
 
-
-/* Timeline Container */
-
 .timeline {
   --m: 2rem;
-  /* margin */
   --w: 10px;
-  /* Snake width (thickness) */
   --r: 2rem;
-  /* Radius */
   display: flex;
   padding: 3rem;
   gap: var(--m);
@@ -671,26 +655,23 @@ span {
 }
 
 .timeline-description {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   height: 170px;
 }
-
-/* Card container */
 
 .card-timeline {
   position: relative;
   flex: 1 0 auto;
   width: 160px;
-  border: var(--b) solid #000;
+  border: 1px solid #000;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: inset 0 0 0 2px #000;
 
-  /* Snake line */
   &::before {
     content: "";
     position: absolute;
@@ -716,21 +697,19 @@ span {
     border-radius: 0 0 var(--r) var(--r);
     border-top: transparent;
   }
-  /* Pills */
+
   &::after {
     position: absolute;
     font-family: 'Orbitron', sans-serif;
     left: 50%;
     content: attr(data-desc);
-    /*background: orange;*/
     color: black;
     font-weight: 900;
     padding: 1rem;
-    /*border-radius: var(--r);*/
     font-size: 34px;
   }
   &:nth-child(odd)::after {
-    top: 0%;
+    top: 0;
     translate: -50% calc(-50% - var(--m) / 2 - var(--w) / 2);
   }
   &:nth-child(even)::after {
@@ -827,7 +806,6 @@ span {
     display: block;
     width: 350px;
     height: unset;
-    /*border: 1px solid rgba(255, 255, 255, 0.61);*/
     padding: 10px;
     text-align: center;
   }
@@ -869,7 +847,7 @@ span {
   .text-about-me {
     padding-left: unset;
     text-align: left;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 16px;
@@ -889,7 +867,6 @@ span {
   .year {
     display: block;
     border-top: 1px solid #FBF9EE;
-    /*height: 50px;*/
     width: 100%;
     font-family: 'Orbitron', sans-serif;
     font-size: 80px;
@@ -901,7 +878,7 @@ span {
 
   .first-text-studio {
     padding-left: unset;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 16px;
@@ -910,7 +887,7 @@ span {
 
   .second-text-studio {
     padding-right: unset;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 16px;
@@ -1012,7 +989,7 @@ span {
     --r: 2rem;
     display: grid;
     padding: 1rem;
-    gap: var(--m);
+    gap: 2rem;
   }
 
   .card-timeline {
@@ -1020,11 +997,12 @@ span {
     flex: 1 0 auto;
     width: unset;
     height: 150px;
-    border: var(--b) solid #000;
+    border: 1px solid #000;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: inset 0 0 0 2px #000;
     background-color: #e8a832;
+
     &::before {
       content: none;
     }
@@ -1036,6 +1014,7 @@ span {
       font-size: 120px;
       opacity: 50%;
     }
+
     &:nth-child(even)::after {
       top: 40%;
       translate: -50% calc(-50% + var(--m) / 2 + var(--w) / 2);
@@ -1044,7 +1023,6 @@ span {
       opacity: 50%;
     }
   }
-}
   .info-timeline {
     display: unset;
     text-align: center;

@@ -418,11 +418,6 @@ section {
   scroll-snap-align: start;
 }
 
-.two {
-  display: grid;
-  background-color: #FBF9EE;
-}
-
 .my-work {
   height: 150px;
   font-size: 120px;
@@ -465,11 +460,16 @@ section {
   display: flex;
 }
 
+.two {
+  display: grid;
+  background-color: #FBF9EE;
+}
+
 .three {
   background-color: #FBF9EE;
 }
 
-.four {
+.five {
   background-color: #FBF9EE;
   display: grid;
   align-items: start;
@@ -860,7 +860,7 @@ span {
     text-align: center;
   }
 
-  .four {
+  .five {
     background-color: #FBF9EE;
     display: block;
     align-items: start;
@@ -1044,7 +1044,6 @@ span {
       opacity: 50%;
     }
   }
-}
   .info-timeline {
     display: unset;
     text-align: center;
@@ -1053,3 +1052,4 @@ span {
     z-index: 1;
   }
 }
+

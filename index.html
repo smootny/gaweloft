@@ -210,23 +210,24 @@
     <h1 class="title-contact">KONTAKT</h1>
     <button type="button" id="closeBtn" class="close-btn">&#x2715;</button>
   </div>
-  <form>
+
+  <form action="https://formsubmit.co/sebagotbands@gmail.com" method="POST">
     <div class="input-container">
       <div class="input-group">
-        <input type="text" id="name" required>
+        <input type="text" id="name" name="name" required>
         <label for="name"><i class="fas fa-user"></i> Twoje Imię</label>
       </div>
       <div class="input-group">
-        <input type="text" id="number" required>
+        <input type="text" id="number" name="number" required>
         <label for="number"><i class="fas fa-phone"></i> Numer Telefonu</label>
       </div>
     </div>
     <div class="input-group">
-      <input type="email" id="email" required>
+      <input type="email" id="email"  name="email" required>
       <label for="email"><i class="fas fa-envelope"></i> @email.com</label>
     </div>
     <div class="input-group">
-      <textarea id="message" rows="4" required></textarea> <!-- Reduced rows to make it visually compact -->
+      <textarea id="message" rows="8" name="message" required></textarea>
       <label for="message"><i class="fas fa-comment"></i> Twoja wiadomość</label>
     </div>
     <button type="submit" class="submit"><i class="fas fa-paper-plane"></i> Wyślij</button>

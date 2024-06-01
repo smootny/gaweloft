@@ -718,8 +718,63 @@ span {
   }
 }
 
+/*@media screen and (min-width: 360px) and (max-width: 400px) {*/
+/*  .my-work {*/
+/*    height: 70px;*/
+/*    font-size: 45px;*/
+/*    font-family: Orbitron, sans-serif;*/
+/*    padding-top: 40px;*/
+/*    border-bottom: 1px solid black;*/
+/*    margin: 10px;*/
+/*  }*/
 
-@media screen and (max-width: 600px) {
+/*  .images {*/
+/*    width: 310px;*/
+/*    border-radius: 10px;*/
+/*  }*/
+
+/*  .card {*/
+/*    display: block;*/
+/*    width: 340px;*/
+/*    height: unset;*/
+/*    padding: 10px;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*  .text-images {*/
+/*    width: 340px;*/
+/*    font-size: 40px;*/
+/*    font-family: 'Orbitron', sans-serif;*/
+/*    margin: 0;*/
+/*    font-weight: 300;*/
+/*    line-height: 70px;*/
+/*    border-bottom: 1px solid black;*/
+/*  }*/
+
+/*  .text-images-two {*/
+/*    width: 340px;*/
+/*    font-size: 40px;*/
+/*    font-family: 'Orbitron', sans-serif;*/
+/*    margin: 0;*/
+/*    font-weight: 300;*/
+/*    line-height: 70px;*/
+/*    border-bottom: 1px solid black;*/
+/*  }*/
+
+/*  .year {*/
+/*    display: block;*/
+/*    border-top: 1px solid #FBF9EE;*/
+/*    width: 100%;*/
+/*    font-family: 'Orbitron', sans-serif;*/
+/*    font-size: 70px;*/
+/*    font-weight: bold;*/
+/*    color: #FBF9EE;*/
+/*    margin-top: 18px;*/
+/*    text-align: center;*/
+/*  }*/
+/*}*/
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
   .slide > img {
     opacity: 1;
     height: 100vh;
@@ -737,7 +792,7 @@ span {
   }
 
   nav a {
-    margin: 0 14px;
+    margin: 0 12px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -747,7 +802,7 @@ span {
 
   .my-work {
     height: 70px;
-    font-size: 48px;
+    font-size: 45px;
     font-family: 'Orbitron', sans-serif;
     padding-top: 40px;
     border-bottom: 1px solid black;
@@ -789,7 +844,7 @@ span {
   }
 
   .text-images {
-    width: 350px;
+    width: 330px;
     font-size: 40px;
     font-family: 'Orbitron', sans-serif;
     margin: 0;
@@ -799,7 +854,7 @@ span {
   }
 
   .text-images-two {
-    width: 350px;
+    width: 330px;
     font-size: 40px;
     font-family: 'Orbitron', sans-serif;
     margin: 0;
@@ -810,10 +865,15 @@ span {
 
   .card {
     display: block;
-    width: 350px;
+    width: 330px;
     height: unset;
     padding: 10px;
     text-align: center;
+  }
+
+  .images {
+    width: 320px;
+    border-radius: 10px;
   }
 
   .studio {
@@ -1038,7 +1098,7 @@ span {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1280px) {
+@media screen and (min-width: 701px) and (max-width: 1280px) {
   .slide > img {
     opacity: 1;
     height: 100vh;
@@ -1226,58 +1286,3 @@ span {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 600px) {
-  .my-work {
-    height: 70px;
-    font-size: 45px;
-    font-family: Orbitron, sans-serif;
-    padding-top: 40px;
-    border-bottom: 1px solid black;
-    margin: 10px;
-  }
-
-  .images {
-    width: 310px;
-    border-radius: 10px;
-  }
-
-  .card {
-    display: block;
-    width: 340px;
-    height: unset;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .text-images {
-    width: 340px;
-    font-size: 40px;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    font-weight: 300;
-    line-height: 70px;
-    border-bottom: 1px solid black;
-  }
-
-  .text-images-two {
-    width: 340px;
-    font-size: 40px;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0;
-    font-weight: 300;
-    line-height: 70px;
-    border-bottom: 1px solid black;
-  }
-
-  .year {
-    display: block;
-    border-top: 1px solid #FBF9EE;
-    width: 100%;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-    color: #FBF9EE;
-    margin-top: 18px;
-    text-align: center;
-  }
-}

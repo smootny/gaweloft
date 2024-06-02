@@ -718,62 +718,6 @@ span {
   }
 }
 
-/*@media screen and (min-width: 360px) and (max-width: 400px) {*/
-/*  .my-work {*/
-/*    height: 70px;*/
-/*    font-size: 45px;*/
-/*    font-family: Orbitron, sans-serif;*/
-/*    padding-top: 40px;*/
-/*    border-bottom: 1px solid black;*/
-/*    margin: 10px;*/
-/*  }*/
-
-/*  .images {*/
-/*    width: 310px;*/
-/*    border-radius: 10px;*/
-/*  }*/
-
-/*  .card {*/
-/*    display: block;*/
-/*    width: 340px;*/
-/*    height: unset;*/
-/*    padding: 10px;*/
-/*    text-align: center;*/
-/*  }*/
-
-/*  .text-images {*/
-/*    width: 340px;*/
-/*    font-size: 40px;*/
-/*    font-family: 'Orbitron', sans-serif;*/
-/*    margin: 0;*/
-/*    font-weight: 300;*/
-/*    line-height: 70px;*/
-/*    border-bottom: 1px solid black;*/
-/*  }*/
-
-/*  .text-images-two {*/
-/*    width: 340px;*/
-/*    font-size: 40px;*/
-/*    font-family: 'Orbitron', sans-serif;*/
-/*    margin: 0;*/
-/*    font-weight: 300;*/
-/*    line-height: 70px;*/
-/*    border-bottom: 1px solid black;*/
-/*  }*/
-
-/*  .year {*/
-/*    display: block;*/
-/*    border-top: 1px solid #FBF9EE;*/
-/*    width: 100%;*/
-/*    font-family: 'Orbitron', sans-serif;*/
-/*    font-size: 70px;*/
-/*    font-weight: bold;*/
-/*    color: #FBF9EE;*/
-/*    margin-top: 18px;*/
-/*    text-align: center;*/
-/*  }*/
-/*}*/
-
 @media screen and (min-width: 300px) and (max-width: 700px) {
   .slide > img {
     opacity: 1;
@@ -935,7 +879,7 @@ span {
     border-top: 1px solid #FBF9EE;
     width: 100%;
     font-family: 'Orbitron', sans-serif;
-    font-size: 80px;
+    font-size: 76px;
     font-weight: bold;
     color: #FBF9EE;
     margin-top: 18px;

@@ -245,6 +245,10 @@ label {
   font-size: 16px;
 }
 
+.submit:active {
+  transform: translateY(-2px);
+}
+
 .pop-up {
   height: 450px;
   width: 500px;
@@ -984,6 +988,10 @@ span {
     width: 340px;
     cursor: pointer;
     font-size: 16px;
+  }
+
+  .submit:active {
+    transform: translateY(-3px);
   }
 
   .studio-card-timeline {

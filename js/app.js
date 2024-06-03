@@ -78,6 +78,7 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   const imagePopup = document.getElementById('imagePopup');
   const popupImage = document.getElementById('popupImage');
   const imageCloseBtn = document.getElementById('imageCloseBtn');
+  const sendBtn = document.getElementById('send');
 
   openBtn.addEventListener('click', () => {
     popup.style.display = 'block';
@@ -88,8 +89,26 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   });
 
   closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
+      popup.style.display = 'none';
   });
+
+    sendBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      let allFilled = true;
+      document.querySelectorAll('form [required]').forEach(input => {
+        if (!input.value.trim()) allFilled = false;
+      });
+
+      if (allFilled) {
+        document.querySelector('form').submit();
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 2000);
+      } else {
+        alert("Proszę uzupełnić reszte pól.");
+      }
+    });
 
 
   mainContainer.addEventListener('scroll', () => {
@@ -110,3 +129,4 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     imagePopup.style.display = 'none';
   });
 });
+

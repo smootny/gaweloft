@@ -230,7 +230,8 @@
       <textarea id="message" rows="8" name="message" required></textarea>
       <label for="message"><i class="fas fa-comment"></i> Twoja wiadomość</label>
     </div>
-    <button type="submit" class="submit"><i class="fas fa-paper-plane"></i> Wyślij</button>
+    <input type="hidden" name="_captcha" value="false">
+    <button type="submit" id="send" class="submit"><i class="fas fa-paper-plane"></i> Wyślij</button>
   </form>
 </div>
 </body>

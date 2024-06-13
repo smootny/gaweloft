@@ -1157,6 +1157,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    --w: 8px !important;
   }
 
   .card-timeline {

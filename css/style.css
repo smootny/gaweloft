@@ -1096,6 +1096,149 @@ span {
   }
 }
 
+/* iPad 11 Pro (portrait) */
+@media only screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
+  .os-phrases h2 {
+    font-size: 100px !important;
+  }
+
+  .os-phrases .designs {
+    font-size: 20px !important;
+    left: -225px !important;
+    bottom: 100px !important;
+  }
+
+  .my-work {
+    font-size: 80px !important;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 1px solid black;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .card {
+    display: flex;
+    flex: 250px;
+    width: 80px !important;
+    padding: 0px;
+    justify-content: space-evenly;
+
+    .images {
+      margin: 20px;
+      width: 180px !important;
+    }
+
+    .text-images {
+      margin: 20px;
+      font-size: 35px;
+      width: 250px !important;
+    }
+
+    .text-images-two {
+      margin: 20px;
+      font-size: 35px;
+      width: 250px !important;
+    }
+  }
+
+  .studio {
+    font-size: 80px;
+  }
+
+  .first-text-studio {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .second-text-studio {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .studio-card:nth-of-type(1) {
+    padding-bottom: 170px !important;
+  }
+
+  .studio-card:nth-of-type(2) {
+    margin-top: 10px;
+    padding-bottom: 170px;
+  }
+
+  .studio-card-timeline {
+    padding: 40px !important;
+    height: 820px !important;
+  }
+
+  .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    --w: 11px !important;
+  }
+
+  .card-timeline {
+    flex: 0 1 48%;
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .info-timeline {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .timeline-description {
+    font-size: 14px;
+  }
+
+  .about-me {
+    font-size: 80px;
+  }
+
+  .about-me-card {
+    margin-top: -140px;
+
+    p {
+      font-size: 17px !important;
+    }
+  }
+
+  footer {
+    padding: 12px 5% !important;
+  }
+
+  .logo,
+  .info,
+  .address,
+  .social-media {
+    a {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 16px;
+      padding-left: 0px;
+    }
+  }
+
+  .info {
+    justify-items: flex-start;
+  }
+
+  .address {
+    margin-left: 30px;
+  }
+
+  .year {
+    font-size: 80px;
+  }
+}
+
 /* iPad 11 Pro (landscape) */
 @media only screen and (min-width: 1024px) and (max-width: 1194px) and (orientation: landscape) {
   .my-work {
@@ -1131,7 +1274,6 @@ span {
       width: 250px !important;
     }
   }
-
 
   .studio {
     font-size: 80px;

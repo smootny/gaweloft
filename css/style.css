@@ -474,12 +474,17 @@ section {
 
 .three {
   background-color: #FBF9EE;
+  margin-top: 50px;
 }
 
 .four {
   background-color: #FBF9EE;
   display: grid;
   align-items: start;
+}
+
+.five {
+  margin-top: 50px;
 }
 
 @keyframes fadeOutToLeft {

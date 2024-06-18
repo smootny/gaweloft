@@ -545,7 +545,6 @@ section {
 
 .studio-card-timeline {
   padding: 90px 20px 140px 20px;
-  ;
   display: flex;
   height: 400px;
   border-bottom: 1px solid black;
@@ -674,7 +673,7 @@ span {
 
 .timeline {
   --m: 2rem;
-  --w: 10px;
+  --w: 10.4px;
   --r: 2rem;
   display: flex;
   padding: 3rem;
@@ -700,8 +699,9 @@ span {
 
 .card-timeline {
   position: relative;
-  flex: 1 0 auto;
-  width: 160px;
+  flex: 0 1 48%;
+  width: 140px;
+  height: 320px;
   border: 1px solid #000;
   padding: 2rem;
   border-radius: 1rem;
@@ -732,7 +732,7 @@ span {
   }
 
   &:nth-child(even)::before {
-    top: 50%;
+    top: 49.3%;
     border-radius: 0 0 var(--r) var(--r);
     border-top: transparent;
   }

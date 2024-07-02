@@ -120,11 +120,10 @@ a:hover {
 
 footer {
   display: flex;
-  height: 320px;
   flex-wrap: wrap;
   margin-top: auto;
   background-color: #2d2e33;
-  padding: 30px 10%;
+  padding: 35px 150px 5px 150px;
 }
 
 .footer-col {
@@ -432,7 +431,7 @@ section {
 
 .my-work {
   height: 150px;
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'Orbitron', sans-serif;
   padding-top: 50px;
   border-bottom: 1px solid black;
@@ -442,7 +441,7 @@ section {
 .studio {
   display: flex;
   justify-content: flex-end;
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'Orbitron', sans-serif;
   padding-top: 80px;
   border-bottom: 1px solid black;
@@ -452,7 +451,7 @@ section {
 .about-me {
   display: flex;
   justify-content: flex-start;
-  font-size: 120px;
+  font-size: 100px;
   font-family: 'Orbitron', sans-serif;
   padding-top: 50px;
   border-bottom: 1px solid black;
@@ -664,10 +663,9 @@ span {
   border-top: 1px solid #FBF9EE;
   width: 100%;
   font-family: 'Orbitron', sans-serif;
-  font-size: 150px;
+  font-size: 100px;
   font-weight: bold;
   color: #FBF9EE;
-  margin-top: 18px;
 }
 
 .picture-popup {
